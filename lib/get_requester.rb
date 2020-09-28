@@ -10,7 +10,7 @@ class GetRequester
       @url = "https://learn-co-curriculum.github.io/json-site-example/endpoints/people.json"
     end 
     
-    def get_response_ready
+    def get_response_body
       uri = URL.parse(url)
       uri.open.string 
     end
